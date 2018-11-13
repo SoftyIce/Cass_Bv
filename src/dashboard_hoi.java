@@ -189,7 +189,7 @@ public class dashboard_hoi extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         lbl_Acties1.setFont(new java.awt.Font("Century Gothic", 0, 48)); // NOI18N
-        lbl_Acties1.setText("Acties");
+        lbl_Acties1.setText("AC");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
