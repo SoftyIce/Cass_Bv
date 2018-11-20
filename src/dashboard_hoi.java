@@ -1,3 +1,6 @@
+
+import javax.swing.JFrame;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -30,31 +33,34 @@ public class dashboard_hoi extends javax.swing.JFrame {
         lbl_Bedrijfsnaam2 = new javax.swing.JLabel();
         lbl_Dashboard2 = new javax.swing.JLabel();
         lbl_Instellingen = new javax.swing.JLabel();
-        lbl_Minimaliseren = new javax.swing.JLabel();
-        lbl_Inloggen = new javax.swing.JLabel();
         lbl_Dash = new javax.swing.JLabel();
         lbl_Acties = new javax.swing.JLabel();
-        lbl_Rapportage = new javax.swing.JLabel();
         lbl_Facturen = new javax.swing.JLabel();
-        lbl_Opslag = new javax.swing.JLabel();
         lbl_Email = new javax.swing.JLabel();
         lbl_Datumtijd = new javax.swing.JLabel();
         lbl_Relaties = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         lbl_Acties1 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         lbl_Agenda = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jCalendar1 = new com.toedter.calendar.JCalendar();
+        jLabel6 = new javax.swing.JLabel();
         lbl_Rechten = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1920, 1080));
 
         jPanel4.setBackground(new java.awt.Color(0, 51, 204));
-        jPanel4.setPreferredSize(new java.awt.Dimension(1024, 768));
+        jPanel4.setPreferredSize(new java.awt.Dimension(1920, 1080));
 
         lbl_Bedrijfsnaam2.setFont(new java.awt.Font("Century Gothic", 0, 48)); // NOI18N
         lbl_Bedrijfsnaam2.setForeground(new java.awt.Color(255, 255, 255));
@@ -64,11 +70,10 @@ public class dashboard_hoi extends javax.swing.JFrame {
         lbl_Dashboard2.setForeground(new java.awt.Color(255, 255, 255));
         lbl_Dashboard2.setText("Dashboard => Karel Smits");
 
-        lbl_Instellingen.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\Settings_50px.png")); // NOI18N
-
-        lbl_Minimaliseren.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\Minimize Window_50px.png")); // NOI18N
-
-        lbl_Inloggen.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\Logout Rounded Up_50px.png")); // NOI18N
+        lbl_Instellingen.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
+        lbl_Instellingen.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_Instellingen.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\Settings_25px.png")); // NOI18N
+        lbl_Instellingen.setText("Instellingen");
 
         lbl_Dash.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
         lbl_Dash.setForeground(new java.awt.Color(255, 255, 255));
@@ -80,20 +85,10 @@ public class dashboard_hoi extends javax.swing.JFrame {
         lbl_Acties.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\actie_25px.png")); // NOI18N
         lbl_Acties.setText("Acties");
 
-        lbl_Rapportage.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
-        lbl_Rapportage.setForeground(new java.awt.Color(255, 255, 255));
-        lbl_Rapportage.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\Edit Graph Report_25px.png")); // NOI18N
-        lbl_Rapportage.setText("Rapportage");
-
         lbl_Facturen.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
         lbl_Facturen.setForeground(new java.awt.Color(255, 255, 255));
         lbl_Facturen.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\Download From Cloud_25px.png")); // NOI18N
-        lbl_Facturen.setText("Facturen");
-
-        lbl_Opslag.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
-        lbl_Opslag.setForeground(new java.awt.Color(255, 255, 255));
-        lbl_Opslag.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\Opened Folder_25px.png")); // NOI18N
-        lbl_Opslag.setText("Opslag");
+        lbl_Facturen.setText("Bel acties");
 
         lbl_Email.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
         lbl_Email.setForeground(new java.awt.Color(255, 255, 255));
@@ -109,87 +104,57 @@ public class dashboard_hoi extends javax.swing.JFrame {
         lbl_Relaties.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\Add User Group Man Man_25px.png")); // NOI18N
         lbl_Relaties.setText("Relaties");
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\Search_25px.png")); // NOI18N
-        jLabel1.setText("Search");
-
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
-                        .addComponent(lbl_Bedrijfsnaam2)
-                        .addGap(469, 469, 469)
-                        .addComponent(lbl_Dashboard2))
+                .addGap(64, 64, 64)
+                .addComponent(lbl_Bedrijfsnaam2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbl_Dash)
+                .addGap(35, 35, 35)
+                .addComponent(lbl_Relaties)
+                .addGap(35, 35, 35)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(lbl_Dash)
-                        .addGap(35, 35, 35)
-                        .addComponent(lbl_Relaties)
-                        .addGap(35, 35, 35)
-                        .addComponent(lbl_Rapportage)
+                        .addComponent(lbl_Acties)
                         .addGap(35, 35, 35)
                         .addComponent(lbl_Facturen)
                         .addGap(35, 35, 35)
-                        .addComponent(lbl_Opslag)
-                        .addGap(35, 35, 35)
-                        .addComponent(lbl_Acties)
-                        .addGap(35, 35, 35)
                         .addComponent(lbl_Email)
-                        .addGap(20, 20, 20)))
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(129, 129, 129)
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lbl_Datumtijd))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(484, 484, 484)
+                        .addGap(35, 35, 35)
                         .addComponent(lbl_Instellingen)
-                        .addGap(18, 18, 18)
-                        .addComponent(lbl_Minimaliseren)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_Inloggen)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(60, 60, 60))
+                        .addGap(338, 338, 338)
+                        .addComponent(lbl_Datumtijd))
+                    .addComponent(lbl_Dashboard2))
+                .addGap(64, 64, 64))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_Bedrijfsnaam2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_Minimaliseren)
-                    .addComponent(lbl_Inloggen)
+                .addGap(29, 29, 29)
+                .addComponent(lbl_Dashboard2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_Dash, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_Acties)
+                    .addComponent(lbl_Facturen)
+                    .addComponent(lbl_Email)
+                    .addComponent(lbl_Relaties, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_Instellingen)
-                    .addComponent(lbl_Dashboard2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbl_Datumtijd, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(28, 28, 28))
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lbl_Dash, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lbl_Acties)
-                        .addComponent(lbl_Rapportage, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lbl_Facturen)
-                        .addComponent(lbl_Opslag)
-                        .addComponent(lbl_Email)
-                        .addComponent(lbl_Relaties, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(lbl_Datumtijd, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(lbl_Bedrijfsnaam2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        lbl_Acties1.setFont(new java.awt.Font("Century Gothic", 0, 48)); // NOI18N
-        lbl_Acties1.setText("AC");
+        lbl_Acties1.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
+        lbl_Acties1.setText("Actie lijst");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -203,57 +168,125 @@ public class dashboard_hoi extends javax.swing.JFrame {
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(44, 44, 44)
+                .addGap(30, 30, 30)
                 .addComponent(lbl_Acties1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
+        jLabel3.setText("Relatie gegevens");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 780, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(285, 285, 285)
+                .addComponent(jLabel3)
+                .addContainerGap(285, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 309, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(jLabel3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
+        jLabel4.setText("Acties");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(352, 352, 352)
+                .addComponent(jLabel4)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 313, Short.MAX_VALUE)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(jLabel4)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel8.setPreferredSize(new java.awt.Dimension(440, 635));
 
-        lbl_Agenda.setFont(new java.awt.Font("Century Gothic", 0, 48)); // NOI18N
+        lbl_Agenda.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
         lbl_Agenda.setText("Agenda");
+
+        jLabel7.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\Minus_black25px.png")); // NOI18N
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\Delete_25px.png")); // NOI18N
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\Enlarge_big25px.png")); // NOI18N
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(125, 125, 125)
-                .addComponent(lbl_Agenda)
-                .addGap(125, 125, 125))
+                .addGap(45, 45, 45)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jCalendar1, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(lbl_Agenda)
+                        .addGap(73, 73, 73)
+                        .addComponent(jLabel7)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel6)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel5)))
+                .addGap(45, 45, 45))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(lbl_Agenda)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(lbl_Agenda))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel6))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jCalendar1, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         lbl_Rechten.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
         lbl_Rechten.setText("All rights reserved Cass B.V.");
+
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
+        jLabel2.setText("Mail");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(220, 220, 220)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(jLabel2)
+                .addContainerGap(278, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -267,46 +300,55 @@ public class dashboard_hoi extends javax.swing.JFrame {
                     .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(50, 50, 50)
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 533, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(75, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lbl_Rechten)
-                .addGap(39, 39, 39))
+                .addGap(55, 55, 55))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
+                .addGap(73, 73, 73)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 711, Short.MAX_VALUE))
-                .addGap(26, 26, 26)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 362, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
                 .addComponent(lbl_Rechten)
-                .addContainerGap())
+                .addGap(21, 21, 21))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 1935, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 1968, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel6MouseClicked
 
     /**
      * @param args the command line arguments
@@ -344,14 +386,20 @@ public class dashboard_hoi extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private com.toedter.calendar.JCalendar jCalendar1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JLabel lbl_Acties;
     private javax.swing.JLabel lbl_Acties1;
     private javax.swing.JLabel lbl_Agenda;
@@ -361,11 +409,7 @@ public class dashboard_hoi extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_Datumtijd;
     private javax.swing.JLabel lbl_Email;
     private javax.swing.JLabel lbl_Facturen;
-    private javax.swing.JLabel lbl_Inloggen;
     private javax.swing.JLabel lbl_Instellingen;
-    private javax.swing.JLabel lbl_Minimaliseren;
-    private javax.swing.JLabel lbl_Opslag;
-    private javax.swing.JLabel lbl_Rapportage;
     private javax.swing.JLabel lbl_Rechten;
     private javax.swing.JLabel lbl_Relaties;
     // End of variables declaration//GEN-END:variables
