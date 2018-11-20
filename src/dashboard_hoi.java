@@ -30,7 +30,7 @@ public class dashboard_hoi extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel4 = new javax.swing.JPanel();
-        lbl_Bedrijfsnaam2 = new javax.swing.JLabel();
+        lbl_Bedrijfsnaam = new javax.swing.JLabel();
         lbl_Dashboard2 = new javax.swing.JLabel();
         lbl_Instellingen = new javax.swing.JLabel();
         lbl_Dash = new javax.swing.JLabel();
@@ -39,6 +39,7 @@ public class dashboard_hoi extends javax.swing.JFrame {
         lbl_Email = new javax.swing.JLabel();
         lbl_Datumtijd = new javax.swing.JLabel();
         lbl_Relaties = new javax.swing.JLabel();
+        lbl_Bedrijfslogo = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         lbl_Acties1 = new javax.swing.JLabel();
@@ -62,9 +63,9 @@ public class dashboard_hoi extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(0, 51, 204));
         jPanel4.setPreferredSize(new java.awt.Dimension(1920, 1080));
 
-        lbl_Bedrijfsnaam2.setFont(new java.awt.Font("Century Gothic", 0, 48)); // NOI18N
-        lbl_Bedrijfsnaam2.setForeground(new java.awt.Color(255, 255, 255));
-        lbl_Bedrijfsnaam2.setText("Cass B.V.");
+        lbl_Bedrijfsnaam.setFont(new java.awt.Font("Century Gothic", 0, 48)); // NOI18N
+        lbl_Bedrijfsnaam.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_Bedrijfsnaam.setText("Cass B.V.");
 
         lbl_Dashboard2.setFont(new java.awt.Font("Century Gothic", 0, 36)); // NOI18N
         lbl_Dashboard2.setForeground(new java.awt.Color(255, 255, 255));
@@ -104,38 +105,54 @@ public class dashboard_hoi extends javax.swing.JFrame {
         lbl_Relaties.setIcon(new javax.swing.ImageIcon("S:\\AO leerjaar 2\\stage_cass_bv\\netbeans\\image\\Add User Group Man Man_25px.png")); // NOI18N
         lbl_Relaties.setText("Relaties");
 
+        lbl_Bedrijfslogo.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
+        lbl_Bedrijfslogo.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_Bedrijfslogo.setText("Bedrijfs_logo");
+        lbl_Bedrijfslogo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(64, 64, 64)
-                .addComponent(lbl_Bedrijfsnaam2)
+                .addGap(101, 101, 101)
+                .addComponent(lbl_Bedrijfslogo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbl_Dashboard2)
+                .addGap(522, 522, 522)
+                .addComponent(lbl_Bedrijfsnaam)
+                .addGap(43, 43, 43))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(495, 495, 495)
                 .addComponent(lbl_Dash)
                 .addGap(35, 35, 35)
                 .addComponent(lbl_Relaties)
                 .addGap(35, 35, 35)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(lbl_Acties)
-                        .addGap(35, 35, 35)
-                        .addComponent(lbl_Facturen)
-                        .addGap(35, 35, 35)
-                        .addComponent(lbl_Email)
-                        .addGap(35, 35, 35)
-                        .addComponent(lbl_Instellingen)
-                        .addGap(338, 338, 338)
-                        .addComponent(lbl_Datumtijd))
-                    .addComponent(lbl_Dashboard2))
-                .addGap(64, 64, 64))
+                .addComponent(lbl_Acties)
+                .addGap(35, 35, 35)
+                .addComponent(lbl_Facturen)
+                .addGap(35, 35, 35)
+                .addComponent(lbl_Email)
+                .addGap(35, 35, 35)
+                .addComponent(lbl_Instellingen)
+                .addGap(309, 309, 309)
+                .addComponent(lbl_Datumtijd)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(lbl_Dashboard2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lbl_Bedrijfsnaam, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbl_Dashboard2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addComponent(lbl_Bedrijfslogo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl_Dash, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_Acties)
@@ -145,10 +162,6 @@ public class dashboard_hoi extends javax.swing.JFrame {
                     .addComponent(lbl_Instellingen)
                     .addComponent(lbl_Datumtijd, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26))
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(lbl_Bedrijfsnaam2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -275,10 +288,10 @@ public class dashboard_hoi extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(220, 220, 220)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(250, 250, 250)
                 .addComponent(jLabel2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(231, 231, 231))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -338,7 +351,7 @@ public class dashboard_hoi extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE)
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 176, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -403,7 +416,8 @@ public class dashboard_hoi extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_Acties;
     private javax.swing.JLabel lbl_Acties1;
     private javax.swing.JLabel lbl_Agenda;
-    private javax.swing.JLabel lbl_Bedrijfsnaam2;
+    private javax.swing.JLabel lbl_Bedrijfslogo;
+    private javax.swing.JLabel lbl_Bedrijfsnaam;
     private javax.swing.JLabel lbl_Dash;
     private javax.swing.JLabel lbl_Dashboard2;
     private javax.swing.JLabel lbl_Datumtijd;
